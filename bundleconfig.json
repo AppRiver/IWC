@@ -1,6 +1,6 @@
 [
     {
-        "outputFileName": "iwc-all.js",
+        "outputFileName": "dist/iwc.js",
         "inputFiles": [
             "src/sj.js",
             "src/utils/BasicUtils.js",
@@ -16,7 +16,8 @@
             "src/iwc/WindowMonitor.js",
             "src/iwc/Lock.js",
             "src/iwc/Client.js",
-            "src/iwc/Server.js"
+            "src/iwc/Server.js",
+            "src/iwc/SignalR.js"
         ],
         "minify": {
             "enabled": true

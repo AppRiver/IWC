@@ -10,6 +10,7 @@ This library provides functionality for data exchange and synchronization betwee
 - **Event bus** allows to distribute events among windows
 - **WindowMonitor** tracks windows (tabs) and notifies about window closing/opening
 - **Shared data** provides thread-safe access (read-modify-write operation) to data shared between windows.
+- **SignalR** shares one connection across multiple tabs/ browser windows to bypass browser connection limit. Read about this more: [here](signalr.md)
 
 Library doesn't use localStorage directly - it is accessed via wrapper **SJ.localStorage**. This wrapper is intended to encapsulate some browser specific issues.
 

@@ -1,0 +1,137 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{00E7BE46-A18F-4BC0-BDB4-E34BBE4CCC01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IWC</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-fb64037a21e7434dd44e3b9dde1adedabb768fdc.idx" />
+    <None Include=".git\objects\pack\pack-fb64037a21e7434dd44e3b9dde1adedabb768fdc.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\sourcetreeconfig.json" />
+    <None Include="bundleconfig.json" />
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\iwc.js" />
+    <Content Include="dist\iwc.min.js">
+      <DependentUpon>iwc.js</DependentUpon>
+    </Content>
+    <Content Include="icon.png" />
+    <Content Include="iwc-all.js" />
+    <Content Include="iwc-all.min.js">
+      <DependentUpon>iwc-all.js</DependentUpon>
+    </Content>
+    <Content Include="src\iwc\Client.js" />
+    <Content Include="src\iwc\EventBus.js" />
+    <Content Include="src\iwc\InterlockedCall.js" />
+    <Content Include="src\iwc\iwc.js" />
+    <Content Include="src\iwc\Lock.js" />
+    <Content Include="src\iwc\Server.js" />
+    <Content Include="src\iwc\SharedData.js" />
+    <Content Include="src\iwc\SignalR.js" />
+    <Content Include="src\iwc\WindowMonitor.js" />
+    <Content Include="src\sj.js" />
+    <Content Include="src\utils\BasicUtils.js" />
+    <Content Include="src\utils\LocalStorage.js" />
+    <Content Include="src\utils\Object.js" />
+    <Content Include="src\utils\Observable.js" />
+    <Content Include="tests\all.html" />
+    <Content Include="tests\EventBus\EventBus-test-child.html" />
+    <Content Include="tests\EventBus\EventBus-test.html" />
+    <Content Include="tests\EventBus\EventBusTest-child.js" />
+    <Content Include="tests\EventBus\EventBusTest.js" />
+    <Content Include="tests\InterlockedCall\InterlockedCall-test-child.html" />
+    <Content Include="tests\InterlockedCall\InterlockedCall-test.html" />
+    <Content Include="tests\InterlockedCall\InterlockedCallTest-child.js" />
+    <Content Include="tests\InterlockedCall\interlockedCallTest.js" />
+    <Content Include="tests\jasmine-2.1.2\boot.js" />
+    <Content Include="tests\jasmine-2.1.2\console.js" />
+    <Content Include="tests\jasmine-2.1.2\jasmine-html.js" />
+    <Content Include="tests\jasmine-2.1.2\jasmine.css" />
+    <Content Include="tests\jasmine-2.1.2\jasmine.js" />
+    <Content Include="tests\jasmine-2.1.2\jasmine_favicon.png" />
+    <Content Include="tests\LocalStorage\LocalStorage-test-child.html" />
+    <Content Include="tests\LocalStorage\LocalStorage-test.html" />
+    <Content Include="tests\LocalStorage\LocalStorageTest-child.js" />
+    <Content Include="tests\LocalStorage\localStorageTest.js" />
+    <Content Include="tests\Lock\Lock-test-child.html" />
+    <Content Include="tests\Lock\Lock-test.html" />
+    <Content Include="tests\Lock\LockTest-child.js" />
+    <Content Include="tests\Lock\LockTest.js" />
+    <Content Include="tests\SharedData\SharedData-test-child.html" />
+    <Content Include="tests\SharedData\SharedData-test.html" />
+    <Content Include="tests\SharedData\SharedDataTest-child.js" />
+    <Content Include="tests\SharedData\SharedDataTest.js" />
+    <Content Include="tests\WindowMonitor\WindowMonitor-test-child.html" />
+    <Content Include="tests\WindowMonitor\WindowMonitor-test.html" />
+    <Content Include="tests\WindowMonitor\WindowMonitorTest.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
