@@ -1,0 +1,27 @@
+{
+  "name": "iwc",
+  "version": "1.0.0",
+  "description": "Inter-window (cross-tab) communication library.",
+  "main": "dist/iwc.min.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppRiver/IWC.git"
+  },
+  "keywords": [
+    "iwc",
+    "cross-tab",
+    "communication"
+  ],
+  "author": "App River, Ryan McAfee, Eugene Khudoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppRiver/IWC/issues"
+  },
+  "homepage": "https://github.com/AppRiver/IWC#readme"
+}
