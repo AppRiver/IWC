@@ -1,0 +1,40 @@
+{
+  "name": "iwc",
+  "version": "1.0.0",
+  "description": "Interwindow (cross-tab) communication JavaScript library",
+  "main": "dist/iwc.min.js",
+  "directories": {
+    "dist": "dist",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppRiver/IWC.git"
+  },
+  "keywords": [
+    "iwc",
+    "cross-tab",
+    "communication",
+    "web",
+    "javascript"
+  ],
+  "author": "Eugene Khudoy, AppRiver LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppRiver/IWC/issues"
+  },
+  "homepage": "https://github.com/AppRiver/IWC#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1"
+  }
+}
